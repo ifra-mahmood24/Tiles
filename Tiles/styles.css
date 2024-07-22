@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Gilroy'; */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bg{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(6, 26, 45);
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, rgb(153, 30, 30), rgb(184, 52, 52), orange, yellow, lightgreen, rgb(65, 179, 185), rgb(50, 123, 200),
+        rgb(65, 179, 185), lightgreen, yellow, orange, rgb(184, 52, 52), rgb(153, 30, 30));
+    border-image-slice: 1;
+}
+
+.header{
+    height: 15%;
+    background-color: bisque;
+}
+
+.scroller{
+    background-image: url("wood.avif");
+    height: 25%;
+}
+
+.piano{
+    height: 50%;
+    background-color: aquamarine;
+}
+
+.footer{
+    height: 10%;
+    color: aqua;
+}
