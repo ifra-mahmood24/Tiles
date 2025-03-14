@@ -9,6 +9,8 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .bg{
@@ -41,8 +43,8 @@ html,body{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
-
 
 
 /* #key1, #key2, #key3, #key4, #key5, 
@@ -71,14 +73,84 @@ html,body{
     justify-content: center;
 }
 
-#replay {
+#replay, #enter {
     height: 70%;
     width: 10%;
-    margin-top: 2%;
+    margin-top: 2%; 
+    background-color: cadetblue;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-#enter {
-    height: 70%;
-    width: 10%;
-    margin-top: 2%;
+
+/* Tablet screen size (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        height: 10%;
+    }
+
+    .container {
+        height: 18%;  /* More space for buttons */
+    }
+
+    .key {
+        width: 8%; /* Increase button size */
+        height: 50%; /* Adjust height */
+        color: black;
+    }
+
+    #replay, #enter {
+        width: 10%; /* Increase button size for footer */
+        height: 50%; /* Adjust button size */
+        background-color: cadetblue;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+}
+
+/* Mobile screen size (max-width: 480px) */
+@media (max-width: 480px) {
+    .header {
+        height: 10%;
+    }
+
+    .container {
+        height: 15%; /* Adjust container height */
+        gap: 5px; /* Decrease gap between buttons */
+    }
+
+    .key {
+        width: 12%; /* Make buttons larger on mobile */
+        height: 60%;
+    }
+
+    #replay, #enter {
+        width: 15%; /* Increase footer buttons on small screens */
+        height: 40%; /* Adjust size */
+        background-color: cadetblue;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* Large screen (min-width: 1200px, desktop size) */
+@media (min-width: 1200px) {
+    .container {
+        height: 15%;
+        flex-direction: row; /* Buttons in row layout */
+        justify-content: center;
+    }
+
+    .key {
+        width: 5%; /* Default button width */
+        height: 75%;
+    }
+
+    #replay, #enter {
+        width: 10%; /* Default button width for replay and enter */
+        background-color: cadetblue;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
