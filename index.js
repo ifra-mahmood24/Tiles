@@ -2,7 +2,9 @@ let order = [1,4,13,16,2,3,5,6,7,8,9,10,11,12,14,15];
 let pressedOrder = [];
 
 window.onload = function () {
-    changeColour();
+    setTimeout(() => {
+        changeColour();
+    }, 500);
 };
 
 function changeColour() {
