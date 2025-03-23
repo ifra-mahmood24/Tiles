@@ -1,6 +1,17 @@
 let order = [1,4,13,16,2,3,5,6,7,8,9,10,11,12,14,15];
 let pressedOrder = [];
 
+window.onload = function(limit) {
+    let container = document.getElementById("keyContainer");
+    for (let i=0; i<limit; i++) {
+        let key = document.createElement("button");
+        key.innerText = `${i}`;
+        key.id = `key${i}`;
+        container.appendChild(key)
+
+    }
+}
+
 window.onload = function () {
     setTimeout(() => {
         changeColour();
