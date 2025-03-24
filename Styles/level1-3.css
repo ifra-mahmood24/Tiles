@@ -16,7 +16,7 @@ html,body{
     background-image: linear-gradient(to bottom right, rgb(89, 8, 119), rgb(113, 20, 175), rgb(61, 23, 125),
     rgb(35, 33, 163),rgb(61, 23, 125),rgb(113, 20, 175), rgb(89, 8, 119));
     background-repeat: no-repeat;
-    background-position: fixed;
+    /* background-position: fixed; */
     background-size: cover;
     border-width: 4px;
     border-style: solid;
@@ -33,6 +33,7 @@ html,body{
     justify-content: center;
     align-items: center;
     border-bottom: 7px double black;
+    position: relative;
 }
 
 #title{
