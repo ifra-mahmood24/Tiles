@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/level10.css">
+    <link rel="stylesheet" href="/Styles/level8-10.css">
     <title>Keys</title>
 </head>
 <body>
@@ -13,15 +13,19 @@
             <p id="title">Keys</p>
         </div>
         <div id="subHeader">
+            <img id="subTitleBg" src="/Assets/subtitle_bg_clear.png">
             <p id="level">Level 10</p>
         </div>
         <div id="keyContainer"></div>
-        <div id="pressed">Pressed Order</div>
+        <div id="pressedContainer">
+            <img id="pressedBg" src="/Assets/pressed_bg_clear.png">
+            <div id="pressed">Pressed Order</div>
+        </div>
         <div id="footer">
             <button id="back" onclick="location.href='/levels.html'">Back</button>
             <button id="replay" onclick="replay()">Replay</button>
             <button id="enter" onclick="checkWin()">Enter</button>
-            <button id="next" onclick="location.href='/Levels/level4.html'">Next</button>
+            <button id="next" onclick="winGame()">Next</button>
         </div>
     </div>
 

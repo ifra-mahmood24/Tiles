@@ -26,7 +26,7 @@ html,body{
 }
 
 #header{
-    height: 15%;
+    height: 13%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@ html,body{
 }
 
 #subTitleBg{
-    width: 10em;
+    width: 9em;
 }
 
 #level{
@@ -67,7 +67,7 @@ html,body{
 }
 
 #keyContainer{
-    height: 50%;
+    height: 52%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -78,8 +78,8 @@ html,body{
 }
 
 .key{
-    height: 3.5em;
-    width: 3.5em;
+    height: 3em;
+    width: 3em;
     border-radius: 3em;
     margin-left: 2%;
     background-color: rgb(80, 20, 117);
@@ -99,14 +99,14 @@ html,body{
 }
 
 #pressed{
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
     font-family: Lucida Handwriting;
     position: absolute;
 }
 
 #pressedBg{
-    width: 20em;
+    width: 18em;
     position: relative;
 }
 
@@ -133,43 +133,45 @@ html,body{
 
 /* MEDIA QUERIES */
 /* small devices (425px and up) */
-@media (min-width: 425px) {       
+@media (min-width: 425px) { 
+    #header{height: 12%}      
     #title{font-size: 3em;}
     #titleBg{width: 12em;}
-    #subTitleBg{width: 11em;}
+    #subTitleBg{width: 10em;}
     #level{font-size: 2.5em;}
-    #keyContainer{height: 47%; padding-left:10%; padding-right:10%;}
-    .key{height: 4em; width: 4em;}
-    #pressed{font-size: 1.1em;}
+    #keyContainer{height: 49%;}
+    .key{height: 3.5em; width: 3.5em;}
+    #pressed{font-size: 1em;}
     #pressedContainer{height: 13%;}
-    #pressedBg{width: 25em;}
+    #pressedBg{width: 20em;}
     #replay, #enter, #back, #next{height: 4em; width: 10em;}
 }
 
 /* medium devices (768px and up) */
 @media (min-width: 768px) {
+    #header{height: 13%;}
     #title{font-size: 3.5em;}
-    #titleBg{width: 16em;}
-    #subTitleBg{width: 12em;}
-    #level{font-size: 3em;}
-    #keyContainer{height: 45%; padding-left: 15%; padding-right: 15%;}
-    .key{height: 5em; width: 5em;}
+    #titleBg{width: 14em;}
+    #subTitleBg{width: 11em;}
+    #level{font-size: 2.5em;}
+    #keyContainer{height: 45%; padding-left: 10%; padding-right: 10%;}
+    .key{height: 4.5em; width: 4.5em;}
     #pressedContainer{height: 15%;}
-    #pressed{font-size: 1.3em;}
-    #pressedBg{width: 30em;}   
-    #replay, #enter, #back, #next{height: 4em; width: 10em;}
+    #pressed{font-size: 1.2em;}
+    #pressedBg{width: 25em;}   
+    #replay, #enter, #back, #next{height: 4.3em; width: 10em; font-size: 0.9em;}
 }
 
 /* large devices (1024px and up) */
 @media (min-width: 1024px) {    
     #title{font-size: 4em;}
-    #titleBg{width: 18em;}
-    #subTitleBg{width: 14em;}
-    #level{font-size: 3.5em;}
+    #titleBg{width: 16em;}
+    #subTitleBg{width: 13em;}
+    #level{font-size: 3em;}
     #keyContainer{height: 45%; width: 100%;}
-    .key{height: 6em; width: 6em;}
+    .key{height: 5em; width: 5em; border-radius: 3.5em; font-size: 1.3em;}
     #pressedContainer{ height: 15%;}
     #pressed{font-size: 1.5em;}
-    #pressedBg{width: 37em;}
-    #replay, #enter, #back, #next{height: 4.5em; width: 10em; font-size: 1.1em;}
+    #pressedBg{width: 39em;}
+    #replay, #enter, #back, #next{height: 4.5em; width: 12em; font-size: 1em;}
 }

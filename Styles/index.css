@@ -2,24 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Gilroy'; */
 }
 
 html,body{
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    overflow: auto;
 }
 
 .bg{
     height: 100%;
     width: 100%;
-    /* background-image: url('/Assets/bg_image.jpg'); */
-    background-image: linear-gradient(to bottom right, rgb(33, 98, 227), rgb(125, 145, 186), rgb(37, 77, 158), rgb(33, 98, 227),
-    rgb(96, 105, 224), rgb(130, 130, 212), rgb(54, 46, 160));
+    background-image: linear-gradient(to bottom right, rgb(89, 8, 119), rgb(113, 20, 175), rgb(61, 23, 125),
+    rgb(35, 33, 163), rgb(61, 23, 125), rgb(113, 20, 175), rgb(89, 8, 119));
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
@@ -30,203 +25,102 @@ html,body{
     border-image-slice: 1;
 }
 
-/* Tablet screen size (max-width: 768px) */
-@media (max-width: 768px) {
-    #header{
-        height: 15%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 7px double rgb(30, 30, 123);
-        position: relative;
-    }
-    
-    #title{
-        font-family:Brush Script MT;
-        font-size: 60px;
-        color: white;
-        /* background-image: url(/Assets/title_bg_clear.png);
-        background-repeat: no-repeat;
-        background-size: cover; */
-        position: absolute;
-    }
-    
-    #titleBg{
-        width: 200px;
-    }
-    
-    #howTo{
-        height: 60%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #howToTitle{
-        font-family:Lucida Handwriting;
-        font-size: 30px;
-        color: white;
-    }
-    
-    #howToText{
-        font-family:Papyrus;
-        font-size: 20px;
-        color: white;
-        text-align: center;
-    }
-    
-    #footer{
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 7px double rgb(30, 30, 123);
-    }
-    
-    #levelsButton{
-        height: 60px;
-        width: 90px;
-        background-color: cadetblue;
-        font-family: Lucida Handwriting;
-        font-size: 20px;
-        color: white;
-        
-    }
+#header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 7px double black;
+    position: relative;
 }
 
-/* Mobile screen size (max-width: 480px) */
-@media (max-width: 480px) {
-    #header{
-        height: 15%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 7px double rgb(30, 30, 123);
-        position: relative;
-    }
-    
-    #title{
-        font-family:Brush Script MT;
-        font-size: 60px;
-        color: white;
-        /* background-image: url(/Assets/title_bg_clear.png);
-        background-repeat: no-repeat;
-        background-size: cover; */
-        position: absolute;
-    }
-    
-    #titleBg{
-        width: 200px;
-    }
-    
-    #howTo{
-        height: 60%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #howToTitle{
-        font-family:Lucida Handwriting;
-        font-size: 30px;
-        color: white;
-    }
-    
-    #howToText{
-        font-family:Papyrus;
-        font-size: 18px;
-        color: white;
-        text-align: center;
-    }
-    
-    #footer{
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 7px double rgb(30, 30, 123);
-    }
-    
-    #levelsButton{
-        height: 60px;
-        width: 90px;
-        background-color: cadetblue;
-        font-family: Lucida Handwriting;
-        font-size: 20px;
-        color: white;
-        
-    }
+#title{
+    font-family:Brush Script MT;
+    font-size: 3em;
+    color: white;
+    position: absolute;
 }
 
-/* Large screen (min-width: 1200px, desktop size) */
-@media (min-width: 1200px) {
-    #header{
-        height: 15%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 7px double rgb(30, 30, 123);
-        position: relative;
-    }
-    
-    #title{
-        font-family:Brush Script MT;
-        font-size: 80px;
-        color: white;
-        /* background-image: url(/Assets/title_bg_clear.png);
-        background-repeat: no-repeat;
-        background-size: cover; */
-        position: absolute;
-    }
-    
-    #titleBg{
-        width: 300px;
-    }
-    
-    #howTo{
-        height: 60%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #howToTitle{
-        font-family:Lucida Handwriting;
-        font-size: 40px;
-        color: white;
-    }
-    
-    #howToText{
-        font-family:Papyrus;
-        font-size: 30px;
-        color: white;
-        text-align: center;
-    }
-    
-    #footer{
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 7px double rgb(30, 30, 123);
-    }
-    
-    #levelsButton{
-        height: 70px;
-        width: 120px;
-        background-color: cadetblue;
-        font-family: Lucida Handwriting;
-        font-size: 30px;
-        color: white;
-        
-    }
+#titleBg{
+    width: 12em;
+}
+
+#howToHeader{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#howToTitle{
+    font-family:Lucida Handwriting;
+    font-size: 1.5em;
+    color: black;
+    position: absolute;
+}
+
+#subTitleBg{
+    width: 15em;
+}
+
+#howToContent{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#howToText{
+    font-family:Papyrus;
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+}
+
+#footer{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 7px double black;
+}
+
+#levelsButton{
+    height: 3.5em;
+    width: 8em;
+    background-color: rgb(80, 20, 117);
+    font-family: Lucida Handwriting;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;        
+}
+
+/* MEDIA QUERIES */
+/* small devices (425px and up) */
+@media (min-width: 425px) {
+    #howToText{font-size: 1.3em;}
+}
+
+/* medium devices (768px and up) */
+@media (min-width: 768px) {
+    #title{font-size: 4em;}   
+    #titleBg{width: 16em;}
+    #howToTitle{font-size: 2em;}
+    #subTitleBg{width: 18em;}
+    #howToText{font-size: 1.5em;;}
+}
+
+/* large devices (1024px and up) */
+@media (min-width: 1024px) {
+    #title{font-size: 4.5em;}
+    #titleBg{width: 18em;}
+    #howToTitle{font-size: 2.5em;}
+    #subTitleBg{width: 22em;}
+    #howToText{font-size: 2em;}
+    #levelsButton{font-size: 1.6em;}
 }

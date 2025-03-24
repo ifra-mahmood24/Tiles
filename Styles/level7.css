@@ -133,31 +133,33 @@ html,body{
 
 /* MEDIA QUERIES */
 /* small devices (425px and up) */
-@media (min-width: 425px) {       
+@media (min-width: 425px) { 
+    #header{height: 12%}      
     #title{font-size: 3em;}
     #titleBg{width: 12em;}
-    #subTitleBg{width: 11em;}
+    #subTitleBg{width: 10em;}
     #level{font-size: 2.5em;}
-    #keyContainer{height: 47%; padding-left:10%; padding-right:10%;}
-    .key{height: 4em; width: 4em;}
+    #keyContainer{height: 49%;}
+    .key{height: 3.5em; width: 3.5em;}
     #pressed{font-size: 1.1em;}
     #pressedContainer{height: 13%;}
-    #pressedBg{width: 25em;}
+    #pressedBg{width: 22em;}
     #replay, #enter, #back, #next{height: 4em; width: 10em;}
 }
 
 /* medium devices (768px and up) */
 @media (min-width: 768px) {
+    #header{height: 13%;}
     #title{font-size: 3.5em;}
-    #titleBg{width: 16em;}
+    #titleBg{width: 14em;}
     #subTitleBg{width: 12em;}
     #level{font-size: 3em;}
-    #keyContainer{height: 45%; padding-left: 15%; padding-right: 15%;}
+    #keyContainer{height: 45%; padding-left: 10%; padding-right: 10%;}
     .key{height: 5em; width: 5em;}
     #pressedContainer{height: 15%;}
     #pressed{font-size: 1.3em;}
-    #pressedBg{width: 30em;}   
-    #replay, #enter, #back, #next{height: 4em; width: 10em;}
+    #pressedBg{width: 27em;}   
+    #replay, #enter, #back, #next{height: 4.5em; width: 12em; font-size: 0.8em;}
 }
 
 /* large devices (1024px and up) */
@@ -167,9 +169,9 @@ html,body{
     #subTitleBg{width: 14em;}
     #level{font-size: 3.5em;}
     #keyContainer{height: 45%; width: 100%;}
-    .key{height: 6em; width: 6em;}
+    .key{height: 6.5em; width: 6.5em; border-radius: 3.5em; font-size: 1.3em;}
     #pressedContainer{ height: 15%;}
     #pressed{font-size: 1.5em;}
-    #pressedBg{width: 37em;}
-    #replay, #enter, #back, #next{height: 4.5em; width: 10em; font-size: 1.1em;}
+    #pressedBg{width: 39em;}
+    #replay, #enter, #back, #next{height: 5em; width: 14em; font-size: 1.1em;}
 }

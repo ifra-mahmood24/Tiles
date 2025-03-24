@@ -8,16 +8,13 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .bg{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom right, rgb(33, 98, 227), rgb(125, 145, 186), rgb(37, 77, 158), rgb(33, 98, 227),
-    rgb(96, 105, 224), rgb(130, 130, 212), rgb(54, 46, 160));
+    background-image: linear-gradient(to bottom right, rgb(89, 8, 119), rgb(113, 20, 175), rgb(61, 23, 125),
+    rgb(35, 33, 163),rgb(61, 23, 125),rgb(113, 20, 175), rgb(89, 8, 119));
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
@@ -35,303 +32,144 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 7px double rgb(30, 30, 123);
+    border-bottom: 7px double black;
 }
 
-#subHeader{
-    height: 5%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-}
-/* 
 #title{
     font-family:Brush Script MT;
-    font-size: 60px;
+    font-size: 3.5em;
     color: white;
     position: absolute;
 }
 
 #titleBg{
-    width: 200px;
+    width: 11em;
 }
 
 #subHeader{
-    height: 5%;
+    height: 10%;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    position: relative;
 }
 
-#pressed{
-    position: fixed;
-    top: 200px;
-    right: 0;
-    height: 200px;
-    width: 400px;
-    /* background-color: pink; *
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#subTitleBg{
+    width: 10em;
+}
+
+#level{
+    font-family: Brush Script MT;
+    font-size: 2em;
+    color: black;
+    position: absolute;
 }
 
 #keyContainer{
-    height: 450px;
+    height: 50%;
     width: 100%;
-    padding-left: 40%;
-    padding-right: 40%;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* background-color: brown; 
 }
 
 .key{
-    height: 70px !important;
-    width: 70px !important;
-    border-radius: 40px;
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 3em;
     margin-left: 2%;
-    background-color: grey;
+    background-color: rgb(80, 20, 117);
+    font-size: 20px;
+    font-family: Lucida Handwriting;
+    border: 2px solid black;
+}
+
+#pressedContainer{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pressed{
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Lucida Handwriting;
+    position: absolute;
+}
+
+#pressedBg{
+    width: 20em;
+    position: relative;
 }
 
 #footer{
-    height: 10%;
+    height: 15%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    border-top: 7px double rgb(30, 30, 123);
+    align-items: center;
+    border-top: 7px double black;
 }
 
-#replay, #enter, #back {
-    height: 70%;
-    width: 10%;
-    margin-top: 2%; 
-    background-color: cadetblue;
+#replay, #enter, #back, #next{
+    height: 3.5em;
+    width: 8em;
+    background-color: rgb(80, 20, 117);
     margin-left: 2%;
     margin-right: 2%;
-} */
+    color: white;
+    font-size: 0.8em;
+    font-family: Lucida Handwriting;
+    border: 2px solid black;
+}
 
 /* MEDIA QUERIES */
-/* Tablet screen size (max-width: 768px) */
-@media (max-width: 768px) {    
-    #title{
-        font-family:Brush Script MT;
-        font-size: 50px;
-        color: white;
-        position: absolute;
-    }
-    
-    #titleBg{
-        width: 150px;
-    }
-
-    #level{
-        font-family:Brush Script MT ;
-        font-size: 40px;
-        color: white;
-    }
-    
-    #keyContainer{
-        height: 50%;
-        width: 100%;
-        padding-left: 20%;
-        padding-right: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        /* background-color: brown; */
-    }
-    
-    .key{
-        height: 70px;
-        width: 70px;
-        border-radius: 40px;
-        margin-left: 2%;
-        background-color: grey;
-    }
-
-    #pressed{
-        height: 10%;
-        width: 100%;
-        font-size: 20px;
-        font-family: Lucida Handwriting;
-        /* background-color: pink; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-    #footer{
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 7px double rgb(30, 30, 123);
-    }
-    
-    #replay, #enter, #back, #next{
-        height: 50%;
-        width: 12%;
-        background-color: cadetblue;
-        margin-left: 2%;
-        margin-right: 2%;
-        color: white;
-        font-size: 18px;
-        font-family: Lucida Handwriting;
-        border: 2px solid rgb(30, 30, 123);
-    }
+/* small devices (425px and up) */
+@media (min-width: 425px) {       
+    #title{font-size: 3.5em;}
+    #titleBg{width: 13em;}
+    #subTitleBg{width: 11em;}
+    #level{font-size: 2.5em;}
+    #keyContainer{height: 47%;}
+    .key{height: 5em; width: 5em;}
+    #pressedContainer{height: 13%;}
+    #pressedBg{width: 25em;}
+    #pressed{font-size: 1.2em;}
 }
 
-/* Mobile screen size (max-width: 480px) */
-@media (max-width: 480px) {
-    #title{
-        font-family:Brush Script MT;
-        font-size: 50px;
-        color: white;
-        position: absolute;
-    }
-    
-    #titleBg{
-        width: 150px;
-    }
-    
-    #level{
-        font-family:Brush Script MT ;
-        font-size: 40px;
-        color: white;
-    }
-
-    #keyContainer{
-        height: 50%;
-        width: 100%;
-        padding-left: 7%;
-        padding-right: 7%;
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        /* justify-content: center; */
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .key{
-        height: 65px;
-        width: 65px;
-        border-radius: 40px;
-        margin-left: 2%;
-        background-color: grey;
-    }
-
-    #pressed{
-        height: 15%;
-        width: 100%;
-        font-size: 20px;
-        font-family: Lucida Handwriting;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #footer{
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 7px double rgb(30, 30, 123);
-    }
-    
-    #replay, #enter, #back, #next{
-        height: 58%;
-        width: 20%; 
-        background-color: cadetblue;
-        margin-left: 2%;
-        margin-right: 2%;
-        color: white;
-        font-size: 18px;
-        font-family: Lucida Handwriting;
-        border: 2px solid rgb(30, 30, 123);
-    }
+/* medium devices (768px and up) */
+@media (min-width: 768px) {
+    #title{font-size: 4em;}
+    #titleBg{width: 16em;}
+    #subTitleBg{width: 14em;}
+    #subHeader{height: 12%;}
+    #level{font-size: 3em;}
+    #keyContainer{height: 40%;}
+    .key{height: 6em; width: 6em;}
+    #pressedContainer{height: 18%;}
+    #pressed{font-size: 1.5em;}
+    #pressedBg{width: 37em;}
+    #replay, #enter, #back, #next{height: 4em; width: 10em; font-size: 1em;}
 }
 
-/* Large screen (min-width: 1200px, desktop size) */
+/* large devices (1200px and up) */
 @media (min-width: 1200px) {    
-    #title{
-        font-family:Brush Script MT;
-        font-size: 60px;
-        color: white;
-        position: absolute;
-    }
-    
-    #titleBg{
-        width: 200px;
-    }
-
-    #level{
-        font-family:Brush Script MT ;
-        font-size: 50px;
-        color: white;
-    }
-    
-    #keyContainer{
-        height: 45%;
-        width: 100%;
-        padding-left: 20%;
-        padding-right: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .key{
-        height: 100px;
-        width: 100px;
-        border-radius: 60px;
-        margin-left: 2%;
-        background-color: grey;
-    }
-
-    #pressed{
-        height: 15%;
-        width: 100%;
-        font-size: 20px;
-        font-family: Lucida Handwriting;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #footer{
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 7px double rgb(30, 30, 123);
-    }
-    
-    #replay, #enter, #back, #next {
-        height: 50%;
-        width: 12%;
-        background-color: cadetblue;
-        margin-left: 2%;
-        margin-right: 2%;
-        color: white;
-        font-family: Lucida Handwriting;
-        font-size: 20px;
-        border: 2px solid rgb(30, 30, 123);
-    }
+    #title{font-size: 4.5em;}
+    #titleBg{width: 20em;}
+    #subTitleBg{width: 18em;}
+    #level{font-size: 4em;}
+    #keyContainer{height: 45%; width: 100%;}
+    .key{height: 7em; width: 7em; border-radius: 3.5em; font-size: 1.5em;}
+    #pressedContainer{ height: 15%;}
+    #pressed{font-size: 1.5em;}
+    #pressedBg{width: 40em;}
+    #replay, #enter, #back, #next{height: 4em; width: 10em; font-size: 1.2em;}
 }
