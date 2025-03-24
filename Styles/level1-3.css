@@ -163,14 +163,14 @@ html,body{
 
 /* large devices (1200px and up) */
 @media (min-width: 1200px) {    
-    #title{font-size: 4.5em;}
-    #titleBg{width: 20em;}
-    #subTitleBg{width: 18em;}
-    #level{font-size: 4em;}
+    #title{font-size: 4em;}
+    #titleBg{width: 17em;}
+    #subTitleBg{width: 16em;}
+    #level{font-size: 3.5em;}
     #keyContainer{height: 45%; width: 100%;}
-    .key{height: 7em; width: 7em; border-radius: 3.5em; font-size: 1.5em;}
+    .key{height: 6em; width: 6em; border-radius: 3.5em; font-size: 1em;}
     #pressedContainer{ height: 15%;}
-    #pressed{font-size: 1.5em;}
-    #pressedBg{width: 40em;}
-    #replay, #enter, #back, #next{height: 4em; width: 10em; font-size: 1.2em;}
+    #pressed{font-size: 1em;}
+    #pressedBg{width: 35em;}
+    #replay, #enter, #back, #next{height: 3.5em; width: 8em; font-size: 1.1em;}
 }
