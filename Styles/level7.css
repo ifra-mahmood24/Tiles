@@ -173,5 +173,5 @@ html,body{
     #pressedContainer{ height: 15%;}
     #pressed{font-size: 1.5em;}
     #pressedBg{width: 39em;}
-    #replay, #enter, #back, #next{height: 4.5em; width: 12em; font-size: 1.1em;}
+    #replay, #enter, #back, #next{height: 4em; width: 10em; font-size: 1.1em;}
 }
