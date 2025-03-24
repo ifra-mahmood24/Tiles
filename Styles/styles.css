@@ -9,14 +9,17 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    align-items: center; */
 }
 
 .bg{
     height: 100%;
     width: 100%;
-    background-image: url('/Assets/bg_image.jpg');
+    /* background-image: url('/Assets/bg_image.jpg'); */
+    background-image: linear-gradient(to bottom right, rgb(33, 98, 227), rgb(125, 145, 186), rgb(37, 77, 158), rgb(33, 98, 227),
+    rgb(96, 105, 224), rgb(130, 130, 212), rgb(54, 46, 160));
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
@@ -27,23 +30,39 @@ html,body{
     border-image-slice: 1;
 }
 
-.header{
+#header{
     height: 15%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+
+#pressed{
+    position: fixed;
+    top: 200px;
+    right: 0;
+    height: 200px;
+    width: 400px;
+    background-color: pink;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.keyContainer{
-    height: 15%;
+#keyContainer{
+    height: 450px;
     width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
     display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    /* background-color: brown; */
 }
 
 
@@ -59,15 +78,15 @@ html,body{
     border-radius: 40px,
 } */
 
-.key {
-    height: 75%;
-    width: 5%;
+.key{
+    height: 70px !important;
+    width: 70px !important;
     border-radius: 40px;
     margin-left: 2%;
     background-color: grey;
 }
 
-.footer{
+#footer{
     height: 10%;
     display: flex;
     justify-content: center;
