@@ -169,9 +169,9 @@ html,body{
     #subTitleBg{width: 13em;}
     #level{font-size: 3em;}
     #keyContainer{height: 45%; width: 100%;}
-    .key{height: 5em; width: 5em; border-radius: 3.5em; font-size: 1.3em;}
+    .key{height: 4.5em; width: 4.5em; border-radius: 3.5em; font-size: 1.3em;}
     #pressedContainer{ height: 15%;}
     #pressed{font-size: 1.5em;}
     #pressedBg{width: 39em;}
-    #replay, #enter, #back, #next{height: 4em; width: 10em; font-size: 1em;}
+    #replay, #enter, #back, #next{height: 3.5em; width: 8em; font-size: 1em;}
 }
